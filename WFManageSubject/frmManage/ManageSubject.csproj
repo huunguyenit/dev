@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7EA24077-AFFA-4058-BD37-A78F56A11672}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>frmManage</RootNamespace>
+    <AssemblyName>frmManage</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2" />
+    <Reference Include="DevExpress.ExpressApp.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2" />
+    <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddTab\AddTab.cs" />
+    <Compile Include="BLL\GiaoVien_BLL.cs" />
+    <Compile Include="BLL\MonHoc_BLL.cs" />
+    <Compile Include="DAL\ConnectDB.cs" />
+    <Compile Include="DTO\GiaoVien_DTO.cs" />
+    <Compile Include="DTO\MonHoc.cs" />
+    <Compile Include="frmManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManage.Designer.cs">
+      <DependentUpon>frmManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InfoSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\InfoSubject.Designer.cs">
+      <DependentUpon>InfoSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
+    <EmbeddedResource Include="frmManage.resx">
+      <DependentUpon>frmManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InfoSubject.resx">
+      <DependentUpon>InfoSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPageHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgChangPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLogout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgDocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgEx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchSubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchChapter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgFrmLogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgChangeKey_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLoginLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAccept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoQL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgChangePass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgChangePass24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgCancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgFrmManage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoBook.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgChaterBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgfolderdocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgTestColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAddPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgTrash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSave.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
