@@ -24,9 +24,9 @@ namespace frmManage.GUI
         public void Binding()
         {
             tbxChapter.DataBindings.Clear();
-            tbxChapter.DataBindings.Add("Text", dgvChapter.DataSource, "gcChapter");
+            tbxChapter.DataBindings.Add("Text", dgvChapter.DataSource, "TenChuong");
             cbxImportant.DataBindings.Clear();
-            cbxImportant.DataBindings.Add("EditValue", dgvChapter.DataSource, "gcImportant");
+            cbxImportant.DataBindings.Add("EditValue", dgvChapter.DataSource, "QuanTrong");
         }
 
         //Lấy Thông tin Chuong
@@ -49,14 +49,14 @@ namespace frmManage.GUI
 
             //Load combobox dgvChapter
             dgvChapter.DataSource = cBUS.GetListChapter();
-            gbxFunction.Enabled = false;
+            gbxInfoSubject.Enabled = false;
             Binding();
         }
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
             add = true; update = false;
-            gbxFunction.Enabled = true;
+            gbxInfoSubject.Enabled = true;
             //Load NextID len tbxIDChapter
             tbxIdChapter.Text = cBUS.NextID();
             Deltbx();
@@ -75,7 +75,7 @@ namespace frmManage.GUI
         private void btnEdit_Click(object sender, System.EventArgs e)
         {
             update = true; add = false;
-            gbxFunction.Enabled = true;
+            gbxInfoSubject.Enabled = true;
             tbxChapter.Focus();
         }
 

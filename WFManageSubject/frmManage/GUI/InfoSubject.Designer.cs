@@ -50,12 +50,9 @@
             this.dgvColTeacher = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcChapter = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dgvChapter = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gcImportant = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.qLNoiDungMHDataSet = new frmManage.QLNoiDungMHDataSet();
-            this.chuongBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.chuongTableAdapter = new frmManage.QLNoiDungMHDataSetTableAdapters.ChuongTableAdapter();
+            this.gvChapter = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gvcChapter = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gvcImportant = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gbxFunction)).BeginInit();
             this.gbxFunction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gbxInfoSubject)).BeginInit();
@@ -65,9 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbxIdChapter.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbxChapter.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChapter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNoiDungMHDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chuongBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvChapter)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxFunction
@@ -124,6 +119,7 @@
             this.gbxInfoSubject.Controls.Add(this.lblChapter);
             this.gbxInfoSubject.Controls.Add(this.lblImportant);
             this.gbxInfoSubject.Controls.Add(this.lblSubject);
+            this.gbxInfoSubject.Enabled = false;
             this.gbxInfoSubject.Location = new System.Drawing.Point(209, 3);
             this.gbxInfoSubject.Name = "gbxInfoSubject";
             this.gbxInfoSubject.Size = new System.Drawing.Size(618, 166);
@@ -256,55 +252,40 @@
             // 
             // dgvChapter
             // 
-            this.dgvChapter.DataSource = this.chuongBindingSource;
             this.dgvChapter.Location = new System.Drawing.Point(3, 175);
-            this.dgvChapter.MainView = this.gridView1;
+            this.dgvChapter.MainView = this.gvChapter;
             this.dgvChapter.Name = "dgvChapter";
             this.dgvChapter.Size = new System.Drawing.Size(824, 172);
             this.dgvChapter.TabIndex = 3;
             this.dgvChapter.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gvChapter});
             // 
-            // gridView1
+            // gvChapter
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gcImportant});
-            this.gridView1.GridControl = this.dgvChapter;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gvChapter.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gvcChapter,
+            this.gvcImportant});
+            this.gvChapter.GridControl = this.dgvChapter;
+            this.gvChapter.Name = "gvChapter";
+            this.gvChapter.OptionsView.ShowGroupPanel = false;
             // 
-            // gridColumn1
+            // gvcChapter
             // 
-            this.gridColumn1.Caption = "Chương";
-            this.gridColumn1.FieldName = "gcChapter";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 535;
+            this.gvcChapter.Caption = "Chương";
+            this.gvcChapter.FieldName = "TenChuong";
+            this.gvcChapter.Name = "gvcChapter";
+            this.gvcChapter.Visible = true;
+            this.gvcChapter.VisibleIndex = 0;
+            this.gvcChapter.Width = 535;
             // 
-            // gcImportant
+            // gvcImportant
             // 
-            this.gcImportant.Caption = "Quan trọng";
-            this.gcImportant.FieldName = "gcImportant";
-            this.gcImportant.Name = "gcImportant";
-            this.gcImportant.Visible = true;
-            this.gcImportant.VisibleIndex = 1;
-            this.gcImportant.Width = 156;
-            // 
-            // qLNoiDungMHDataSet
-            // 
-            this.qLNoiDungMHDataSet.DataSetName = "QLNoiDungMHDataSet";
-            this.qLNoiDungMHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // chuongBindingSource
-            // 
-            this.chuongBindingSource.DataMember = "Chuong";
-            this.chuongBindingSource.DataSource = this.qLNoiDungMHDataSet;
-            // 
-            // chuongTableAdapter
-            // 
-            this.chuongTableAdapter.ClearBeforeFill = true;
+            this.gvcImportant.Caption = "Quan trọng";
+            this.gvcImportant.FieldName = "QuanTrong";
+            this.gvcImportant.Name = "gvcImportant";
+            this.gvcImportant.Visible = true;
+            this.gvcImportant.VisibleIndex = 1;
+            this.gvcImportant.Width = 156;
             // 
             // InfoSubject
             // 
@@ -328,9 +309,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbxIdChapter.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbxChapter.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChapter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNoiDungMHDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chuongBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvChapter)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,11 +336,8 @@
         private DevExpress.XtraEditors.LabelControl lblIDChapter;
         private DevExpress.XtraGrid.Columns.GridColumn gcChapter;
         private DevExpress.XtraGrid.GridControl dgvChapter;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gcImportant;
-        private System.Windows.Forms.BindingSource chuongBindingSource;
-        private QLNoiDungMHDataSet qLNoiDungMHDataSet;
-        private QLNoiDungMHDataSetTableAdapters.ChuongTableAdapter chuongTableAdapter;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvChapter;
+        private DevExpress.XtraGrid.Columns.GridColumn gvcChapter;
+        private DevExpress.XtraGrid.Columns.GridColumn gvcImportant;
     }
 }
