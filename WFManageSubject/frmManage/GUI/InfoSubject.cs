@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using frmManage.BLL;
 using frmManage.DTO;
 
@@ -14,40 +6,100 @@ namespace frmManage.GUI
 {
     public partial class InfoSubject : UserControl
     {
-        private TacGia_BLL tgBUS = new TacGia_BLL();
+        private Chuong_BLL cBUS = new Chuong_BLL();
+        private MonHoc_BLL mhBUS = new MonHoc_BLL();
+
         private bool add = false, update = false;
 
         //Xóa dữ liệu trên textbox
-        public void cleantxt()
+        public void Deltbx()
         {
-            txtTenTG.Text = "";
-            txtDiaChi.Text = "";
-            txtSdt.Text = "";
+            cbxImportant.TabIndex = 1;
+            tbxIdChapter.Text = "";
+            tbxChapter.Text = "";
+            cbxSubject.TabIndex = 1;
         }
 
-        //Binding dữ liệu lên textbox
-        public void binding()
+        //Binding dữ liệu
+        public void Binding()
         {
-            txtMaTG.DataBindings.Clear();
-            txtMaTG.DataBindings.Add("Text", dgvTacGia.DataSource, "MaTG");
-            txtTenTG.DataBindings.Clear();
-            txtTenTG.DataBindings.Add("Text", dgvTacGia.DataSource, "HoTenTG");
-            txtDiaChi.DataBindings.Clear();
-            txtDiaChi.DataBindings.Add("Text", dgvTacGia.DataSource, "DiaChiTG");
-            txtSdt.DataBindings.Clear();
-            txtSdt.DataBindings.Add("Text", dgvTacGia.DataSource, "DienThoaiTG");
+            tbxChapter.DataBindings.Clear();
+            tbxChapter.DataBindings.Add("Text", dgvChapter.DataSource, "gcChapter");
+            cbxImportant.DataBindings.Clear();
+            cbxImportant.DataBindings.Add("EditValue", dgvChapter.DataSource, "gcImportant");
         }
 
-        //Lấy Thông tin Tác Giả
-        private TacGia_DTO LayTTTG()
+        //Lấy Thông tin Chuong
+        private Chuong_DTO GetInfoChapter()
         {
-            TacGia_DTO tg = new TacGia_DTO();
-            tg.MaTG = txtMaTG.Text;
-            tg.HoTenTG = txtTenTG.Text;
-            tg.DiaChiTG = txtDiaChi.Text;
-            tg.DienThoaiTG = txtSdt.Text;
-            return tg;
+            Chuong_DTO c = new Chuong_DTO();
+            c.MaChuong = tbxIdChapter.Text;
+            c.TenChuong = tbxChapter.Text;
+            c.MaMH_Chuong = cbxSubject.EditValue.ToString();
+            c.QuangTrong = (cbxImportant.Text == "Đúng") ? 1 : 0;
+            return c;
         }
+
+        private void InfoSubject_Load(object sender, System.EventArgs e)
+        {
+            //Load combobox Môn học
+            cbxSubject.Properties.DataSource = mhBUS.GetListSubject();
+            cbxSubject.Properties.DisplayMember = "TenMH";
+            cbxSubject.Properties.ValueMember = "MaMH";
+
+            //Load combobox dgvChapter
+            dgvChapter.DataSource = cBUS.GetListChapter();
+            gbxFunction.Enabled = false;
+            Binding();
+        }
+
+        private void btnAdd_Click(object sender, System.EventArgs e)
+        {
+            add = true; update = false;
+            gbxFunction.Enabled = true;
+            //Load NextID len tbxIDChapter
+            tbxIdChapter.Text = cBUS.NextID();
+            Deltbx();
+            tbxChapter.Focus();
+        }
+
+        private void btnDelete_Click(object sender, System.EventArgs e)
+        {
+            if(MessageBox.Show("Bạn có muốn xoá Chương : "+tbxChapter.Text + "không?","Hỏi",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                cBUS.DelChapter(tbxIdChapter.Text);
+                InfoSubject_Load(sender, e);
+            }
+        }
+
+        private void btnEdit_Click(object sender, System.EventArgs e)
+        {
+            update = true; add = false;
+            gbxFunction.Enabled = true;
+            tbxChapter.Focus();
+        }
+
+        private void btnSave_Click(object sender, System.EventArgs e)
+        {
+            Chuong_DTO c = GetInfoChapter();
+            if(add)
+            {
+                cBUS.AddChapter(c);
+                InfoSubject_Load(sender, e);
+            }
+            if(update)
+            {
+                cBUS.EditChapter(c);
+                InfoSubject_Load(sender, e);
+
+            }
+        }
+
+        private void btnCancel_Click(object sender, System.EventArgs e)
+        {
+            InfoSubject_Load(sender, e);
+        }
+
         public InfoSubject()
         {
             InitializeComponent();

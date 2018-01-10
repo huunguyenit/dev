@@ -63,16 +63,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTab\AddTab.cs" />
+    <Compile Include="BLL\BaiTap_KiemTra_BLL.cs" />
+    <Compile Include="BLL\Bai_CaNhan_BLL.cs" />
+    <Compile Include="BLL\Bai_Nhom_BLL.cs" />
+    <Compile Include="BLL\Chuong_BLL.cs" />
     <Compile Include="BLL\GiaoVien_BLL.cs" />
+    <Compile Include="BLL\GiaoVien_Day_MH_BLL.cs" />
+    <Compile Include="BLL\HocSinh_BLL.cs" />
+    <Compile Include="BLL\HocSinh_Thi_MonHoc_BLL.cs" />
     <Compile Include="BLL\MonHoc_BLL.cs" />
+    <Compile Include="BLL\NhomHocSinh_BLL.cs" />
+    <Compile Include="BLL\TaiLieu_BLL.cs" />
     <Compile Include="DAL\ConnectDB.cs" />
+    <Compile Include="DTO\BaiTap_KiemTra_DTO.cs" />
+    <Compile Include="DTO\Bai_CaNhan_DTO.cs" />
+    <Compile Include="DTO\Bai_Nhom_DTO.cs" />
+    <Compile Include="DTO\Chuong_DTO.cs" />
+    <Compile Include="DTO\GiaoVien_Day_MH_DTO.cs" />
     <Compile Include="DTO\GiaoVien_DTO.cs" />
-    <Compile Include="DTO\MonHoc.cs" />
-    <Compile Include="frmManage.cs">
+    <Compile Include="DTO\HocSinh_DTO.cs" />
+    <Compile Include="DTO\HocSinh_Thi_Monhoc_DTO.cs" />
+    <Compile Include="DTO\MonHoc_DTO.cs" />
+    <Compile Include="DTO\NhomHocSinh_DTO.cs" />
+    <Compile Include="DTO\TaiLieu_DTO.cs" />
+    <Compile Include="frmManageSubject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmManage.Designer.cs">
-      <DependentUpon>frmManage.cs</DependentUpon>
+    <Compile Include="frmManageSubject.Designer.cs">
+      <DependentUpon>frmManageSubject.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -94,9 +112,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLNoiDungMHDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNoiDungMHDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Utilities.cs" />
-    <EmbeddedResource Include="frmManage.resx">
-      <DependentUpon>frmManage.cs</DependentUpon>
+    <EmbeddedResource Include="frmManageSubject.resx">
+      <DependentUpon>frmManageSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -118,6 +141,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,48 +151,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QLNoiDungMHDataSet.xsc">
+      <DependentUpon>QLNoiDungMHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLNoiDungMHDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNoiDungMHDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNoiDungMHDataSet.xss">
+      <DependentUpon>QLNoiDungMHDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\imgPageHome.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgLogin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgChangPass.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgLogout.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSubject.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgDocument.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgEx.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgTest.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSearchSubject.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSearchChapter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSearchTest.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgFrmLogin.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgChangeKey_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgLogin1.png" />
+    <None Include="Resources\imgChangeKey.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imgLoginLock.png" />
@@ -177,25 +173,22 @@
     <None Include="Resources\imgAccept.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\imgExit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icoQL.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgChangePass.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgChangePass24.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\imgCancel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\imgFrmManage.jpg" />
+    <None Include="Resources\imgChangPass.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icoBook.ico" />
+    <None Include="Resources\imgLogout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPageHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSubject.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imgChaterBook.png" />
@@ -207,7 +200,16 @@
     <None Include="Resources\imgTestColor.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\imgAdd.png" />
+    <None Include="Resources\imgSubject1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchSubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchChapter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchTest.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imgAddPlus.png" />
@@ -216,7 +218,16 @@
     <None Include="Resources\imgTrash.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\imgChangePass.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\imgSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

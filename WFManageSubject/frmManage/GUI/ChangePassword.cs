@@ -43,7 +43,7 @@ namespace frmManage.GUI
             string newPass = tbxNewPassword.Text + "     ";
             string reNewPass = tbxReNewPassword.Text + "     ";
             //Kiểm tra thông tin nhập trên Form đày đủ chưa
-            if (oldPass == "" || newPass == "" || reNewPass == "")
+            if (oldPass == "     " || newPass == "     " || reNewPass == "     ")
             {
                 lblStatusChangePassword.Text = "Bạn chưa điền đầy đủ các thông tin !";
                 return false;

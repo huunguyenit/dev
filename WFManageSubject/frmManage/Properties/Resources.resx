@@ -118,94 +118,67 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="imgCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgCancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgChangePass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgChangePass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgSearchTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgSearchTest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgAccept" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgAccept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgSearchSubject" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgSearchSubject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgChangePass24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgChangePass24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgChangPass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgChangPass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgSubject" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgSubject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgLogout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgChaterBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgChaterBook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icoBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icoBook.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgDocument" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgDocument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgTestColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgTestColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgFrmLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgFrmLogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgAddPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgAddPlus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgSearchChapter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgSearchChapter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgTrash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgTrash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgTest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgLogin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgLogin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgPageHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgPageHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgLoginLock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgLoginLock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgChangeKey_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgChangeKey_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgSearchChapter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgSearchChapter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icoQL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icoQL.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgSearchSubject" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgSearchSubject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgPageHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgPageHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgAccept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgAccept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgChangePass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgChangePass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgLogout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgChangPass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgChangPass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgfolderdocument" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgfolderdocument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgEx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgEx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgChangeKey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgChangeKey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgFrmManage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgFrmManage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgTrash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgTrash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgSubject1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgSubject1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgTestColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgTestColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgAddPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgAddPlus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgChaterBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgChaterBook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgCancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgSearchTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgSearchTest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgSubject" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgSubject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

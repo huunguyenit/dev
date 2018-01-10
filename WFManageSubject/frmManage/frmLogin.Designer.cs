@@ -44,11 +44,11 @@
             // pbLoginLock
             // 
             this.pbLoginLock.BackColor = System.Drawing.Color.Transparent;
-            this.pbLoginLock.BackgroundImage = global::frmManage.Properties.Resources.imgLoginLock;
-            this.pbLoginLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLoginLock.Location = new System.Drawing.Point(12, 12);
+            this.pbLoginLock.Image = global::frmManage.Properties.Resources.imgLoginLock;
+            this.pbLoginLock.Location = new System.Drawing.Point(15, 15);
             this.pbLoginLock.Name = "pbLoginLock";
-            this.pbLoginLock.Size = new System.Drawing.Size(118, 122);
+            this.pbLoginLock.Size = new System.Drawing.Size(128, 128);
+            this.pbLoginLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbLoginLock.TabIndex = 0;
             this.pbLoginLock.TabStop = false;
             // 
@@ -58,7 +58,7 @@
             this.lblLogin.BackColor = System.Drawing.Color.Transparent;
             this.lblLogin.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.Red;
-            this.lblLogin.Location = new System.Drawing.Point(214, 9);
+            this.lblLogin.Location = new System.Drawing.Point(220, 12);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(123, 26);
             this.lblLogin.TabIndex = 1;
@@ -69,7 +69,7 @@
             this.lblUserName.AutoSize = true;
             this.lblUserName.BackColor = System.Drawing.Color.Transparent;
             this.lblUserName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(158, 59);
+            this.lblUserName.Location = new System.Drawing.Point(159, 58);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(69, 19);
             this.lblUserName.TabIndex = 1;
@@ -80,7 +80,7 @@
             this.lblPassWord.AutoSize = true;
             this.lblPassWord.BackColor = System.Drawing.Color.Transparent;
             this.lblPassWord.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassWord.Location = new System.Drawing.Point(158, 98);
+            this.lblPassWord.Location = new System.Drawing.Point(159, 94);
             this.lblPassWord.Name = "lblPassWord";
             this.lblPassWord.Size = new System.Drawing.Size(67, 19);
             this.lblPassWord.TabIndex = 1;
@@ -92,7 +92,7 @@
             this.lblStatusLogin.BackColor = System.Drawing.Color.Transparent;
             this.lblStatusLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatusLogin.ForeColor = System.Drawing.Color.Red;
-            this.lblStatusLogin.Location = new System.Drawing.Point(158, 133);
+            this.lblStatusLogin.Location = new System.Drawing.Point(159, 130);
             this.lblStatusLogin.Name = "lblStatusLogin";
             this.lblStatusLogin.Size = new System.Drawing.Size(148, 19);
             this.lblStatusLogin.TabIndex = 1;
@@ -101,7 +101,7 @@
             // tbxUserName
             // 
             this.tbxUserName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxUserName.Location = new System.Drawing.Point(236, 56);
+            this.tbxUserName.Location = new System.Drawing.Point(234, 55);
             this.tbxUserName.MaxLength = 10;
             this.tbxUserName.Name = "tbxUserName";
             this.tbxUserName.Size = new System.Drawing.Size(163, 26);
@@ -110,7 +110,7 @@
             // tbxPassWord
             // 
             this.tbxPassWord.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPassWord.Location = new System.Drawing.Point(236, 95);
+            this.tbxPassWord.Location = new System.Drawing.Point(234, 91);
             this.tbxPassWord.MaxLength = 10;
             this.tbxPassWord.Name = "tbxPassWord";
             this.tbxPassWord.PasswordChar = '*';
@@ -123,7 +123,7 @@
             this.btnLogin.Appearance.Options.UseFont = true;
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnLogin.ImageOptions.Image = global::frmManage.Properties.Resources.imgAccept;
-            this.btnLogin.Location = new System.Drawing.Point(162, 167);
+            this.btnLogin.Location = new System.Drawing.Point(196, 154);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(90, 35);
             this.btnLogin.TabIndex = 4;
@@ -134,8 +134,8 @@
             this.btnExit.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.ImageOptions.Image = global::frmManage.Properties.Resources.imgExit;
-            this.btnExit.Location = new System.Drawing.Point(311, 167);
+            this.btnExit.ImageOptions.Image = global::frmManage.Properties.Resources.imgCancel;
+            this.btnExit.Location = new System.Drawing.Point(307, 154);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(90, 35);
             this.btnExit.TabIndex = 4;
@@ -162,7 +162,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLogin";
+            this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbLoginLock)).EndInit();
             this.ResumeLayout(false);

@@ -22,7 +22,7 @@ namespace frmManage.DAL
         }
 
         //Khai bao chuoi ket noi CSDL
-        private string strConnect = @"Data Source=DESKTOP-3NSPSDJ\SQLEXPRESS;Initial Catalog=QLNoiDungMH;Persist Security Info=True;User ID=sa;Password=123456";
+        private string strConnect = @"Data Source=MAYTINH-AF360J5\SQLEXPRESS;Initial Catalog=QLNoiDungMH;Integrated Security=True";
         //Kết nối
         public void Connect()
         {

@@ -63,39 +63,9 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icoBook {
-            get {
-                object obj = ResourceManager.GetObject("icoBook", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icoQL {
-            get {
-                object obj = ResourceManager.GetObject("icoQL", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap imgAccept {
             get {
                 object obj = ResourceManager.GetObject("imgAccept", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgAdd {
-            get {
-                object obj = ResourceManager.GetObject("imgAdd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +93,9 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imgChangeKey_2 {
+        internal static System.Drawing.Bitmap imgChangeKey {
             get {
-                object obj = ResourceManager.GetObject("imgChangeKey_2", resourceCulture);
+                object obj = ResourceManager.GetObject("imgChangeKey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,16 +106,6 @@ namespace frmManage.Properties {
         internal static System.Drawing.Bitmap imgChangePass {
             get {
                 object obj = ResourceManager.GetObject("imgChangePass", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgChangePass24 {
-            get {
-                object obj = ResourceManager.GetObject("imgChangePass24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,36 +133,6 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imgDocument {
-            get {
-                object obj = ResourceManager.GetObject("imgDocument", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgEx {
-            get {
-                object obj = ResourceManager.GetObject("imgEx", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgExit {
-            get {
-                object obj = ResourceManager.GetObject("imgExit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap imgfolderdocument {
             get {
                 object obj = ResourceManager.GetObject("imgfolderdocument", resourceCulture);
@@ -213,39 +143,9 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imgFrmLogin {
+        internal static System.Drawing.Bitmap imgHome {
             get {
-                object obj = ResourceManager.GetObject("imgFrmLogin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgFrmManage {
-            get {
-                object obj = ResourceManager.GetObject("imgFrmManage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgLogin {
-            get {
-                object obj = ResourceManager.GetObject("imgLogin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgLogin1 {
-            get {
-                object obj = ResourceManager.GetObject("imgLogin1", resourceCulture);
+                object obj = ResourceManager.GetObject("imgHome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,6 +223,16 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgStop {
+            get {
+                object obj = ResourceManager.GetObject("imgStop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imgSubject {
             get {
                 object obj = ResourceManager.GetObject("imgSubject", resourceCulture);
@@ -333,9 +243,9 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imgTest {
+        internal static System.Drawing.Bitmap imgSubject1 {
             get {
-                object obj = ResourceManager.GetObject("imgTest", resourceCulture);
+                object obj = ResourceManager.GetObject("imgSubject1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

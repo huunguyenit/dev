@@ -22,8 +22,8 @@ namespace frmManage
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            this.tbxUserName.Focus();
             this.AcceptButton = btnLogin;
+            this.tbxUserName.Focus();
         }
     }
 }
