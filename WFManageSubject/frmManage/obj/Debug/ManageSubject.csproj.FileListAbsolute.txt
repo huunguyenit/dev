@@ -56,7 +56,6 @@ C:\Users\huung\source\repos\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.Ch
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\ManageSubject.csprojResolveAssemblyReference.cache
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.frmLogin.resources
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.ChangePassword.resources
-D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoSubject.resources
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.Properties.Resources.resources
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\ManageSubject.csproj.GenerateResource.Cache
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.exe.licenses
@@ -225,3 +224,5 @@ D:\WpManageSubject\dev\WFManageSubject\frmManage\bin\Debug\ja\DevExpress.Xpo.v17
 D:\WpManageSubject\dev\WFManageSubject\frmManage\bin\Debug\ru\DevExpress.Xpo.v17.2.resources.dll
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.frmManageSubject.resources
 D:\WpManageSubject\dev\WFManageSubject\frmManage\bin\Debug\frmManage.exe.config
+D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoDocument.resources
+D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoChapter.resources

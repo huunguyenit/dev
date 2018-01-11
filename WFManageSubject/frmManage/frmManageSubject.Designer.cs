@@ -88,7 +88,7 @@ namespace frmManage
             this.rbpHome,
             this.rbpReport,
             this.rbpSearch});
-            this.rbcMenu.Size = new System.Drawing.Size(852, 149);
+            this.rbcMenu.Size = new System.Drawing.Size(852, 146);
             // 
             // btnLogin
             // 
@@ -131,6 +131,7 @@ namespace frmManage
             this.btnInfoDocument.Id = 5;
             this.btnInfoDocument.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgfolderdocument;
             this.btnInfoDocument.Name = "btnInfoDocument";
+            this.btnInfoDocument.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInfoDocument_ItemClick);
             // 
             // btnInfoTest_Exercise
             // 
@@ -275,14 +276,14 @@ namespace frmManage
             this.tcView.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InActiveTabPageHeader;
             this.tcView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcView.HeaderButtons = DevExpress.XtraTab.TabButtons.Close;
-            this.tcView.Location = new System.Drawing.Point(0, 149);
+            this.tcView.Location = new System.Drawing.Point(0, 146);
             this.tcView.Name = "tcView";
-            this.tcView.Size = new System.Drawing.Size(852, 385);
+            this.tcView.Size = new System.Drawing.Size(852, 388);
             this.tcView.TabIndex = 1;
             this.tcView.CloseButtonClick += new System.EventHandler(this.tcView_CloseButtonClick_1);
             this.tcView.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.tcView_ControlAdded);
             // 
-            // frmManage
+            // frmManageSubject
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Appearance.Options.UseBackColor = true;
@@ -294,7 +295,7 @@ namespace frmManage
             this.Controls.Add(this.tcView);
             this.Controls.Add(this.rbcMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmManage";
+            this.Name = "frmManageSubject";
             this.Ribbon = this.rbcMenu;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nội dung môn học";

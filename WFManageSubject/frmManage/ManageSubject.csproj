@@ -104,19 +104,20 @@
     <Compile Include="GUI\ChangePassword.Designer.cs">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\InfoSubject.cs">
+    <Compile Include="GUI\InfoDocument.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\InfoSubject.Designer.cs">
-      <DependentUpon>InfoSubject.cs</DependentUpon>
+    <Compile Include="GUI\InfoDocument.Designer.cs">
+      <DependentUpon>InfoDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InfoChapter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\InfoChapter.Designer.cs">
+      <DependentUpon>InfoChapter.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLNoiDungMHDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLNoiDungMHDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="frmManageSubject.resx">
       <DependentUpon>frmManageSubject.cs</DependentUpon>
@@ -127,8 +128,11 @@
     <EmbeddedResource Include="GUI\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\InfoSubject.resx">
-      <DependentUpon>InfoSubject.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\InfoDocument.resx">
+      <DependentUpon>InfoDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InfoChapter.resx">
+      <DependentUpon>InfoChapter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -151,17 +155,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QLNoiDungMHDataSet.xsc">
-      <DependentUpon>QLNoiDungMHDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLNoiDungMHDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLNoiDungMHDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLNoiDungMHDataSet.xss">
-      <DependentUpon>QLNoiDungMHDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imgChangeKey.png" />

@@ -34,7 +34,7 @@ namespace frmManage.DTO
 
         private int _QuanTrong;
 
-        public int QuangTrong
+        public int QuanTrong
         {
             get { return _QuanTrong; }
             set { _QuanTrong = value; }

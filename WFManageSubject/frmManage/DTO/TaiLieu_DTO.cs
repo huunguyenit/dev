@@ -16,12 +16,12 @@ namespace frmManage.DTO
             set { _TenTL = value; }
         }
 
-        private string _MaChuong;
+        private string _MaChuong_TL;
 
-        public string MaChuong
+        public string MaChuong_TL
         {
-            get { return _MaChuong; }
-            set { _MaChuong = value; }
+            get { return _MaChuong_TL; }
+            set { _MaChuong_TL = value; }
         }
 
         private int _QuanTrong;

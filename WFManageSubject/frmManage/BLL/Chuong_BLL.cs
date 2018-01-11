@@ -20,6 +20,14 @@ namespace frmManage.BLL
             string sql = "select MaChuong, TenChuong, MaMH_Chuong, (Case QuanTrong when 'true' then N'Đúng' else 'Sai' end)as QuanTrong from Chuong";
             return connData.GetData(sql);
         }
+
+        //Lấy danh sách Chương để load tbx
+        public DataTable GetChapterLoad()
+        {
+            //string sql = "select MaChuong from TaiLieu where MaChuong = '" + taiLieu_DTO.MaChuong_TL + "'";
+            string sql = "select Chuong.MaChuong, Chuong.TenChuong from TaiLieu, Chuong where Chuong.MaChuong = TaiLieu.MaChuong_TL";
+            return connData.GetData(sql);
+        }
         //Kiểm tra trước khi lưu
         public bool CheckBeforeSave(Chuong_DTO chuong_DTO)
         {
@@ -35,7 +43,7 @@ namespace frmManage.BLL
         {
             if(CheckBeforeSave(chuong_DTO))
             {
-                string sql = string.Format("insert into Chuong (MaChuong, TenChuong, MaMH_Chuong, QuanTrong)" + "values ('{0}',N'{1}','{2}',{3})", chuong_DTO.MaChuong, chuong_DTO.TenChuong, chuong_DTO.MaMH_Chuong, chuong_DTO.QuangTrong);
+                string sql = string.Format("insert into Chuong (MaChuong, TenChuong, MaMH_Chuong, QuanTrong)" + "values ('{0}',N'{1}','{2}',{3})", chuong_DTO.MaChuong, chuong_DTO.TenChuong, chuong_DTO.MaMH_Chuong, chuong_DTO.QuanTrong);
                 if(connData.RunSQL(sql))
                 {
                     MessageBox.Show("Thêm thành công", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -49,7 +57,7 @@ namespace frmManage.BLL
         {
             if(CheckBeforeSave(chuong_DTO))
             {
-                string sql = string.Format("update Chuong set TenChuong = N'{1}',QuanTrong={2} where MaChuong = '{0}'", chuong_DTO.MaChuong, chuong_DTO.TenChuong, chuong_DTO.QuangTrong);
+                string sql = string.Format("update Chuong set TenChuong = N'{1}',QuanTrong={2} where MaChuong = '{0}'", chuong_DTO.MaChuong, chuong_DTO.TenChuong, chuong_DTO.QuanTrong);
                 if(connData.RunSQL(sql))
                 {
                     MessageBox.Show("Sửa thông tin Chương thành công! ", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -59,9 +67,9 @@ namespace frmManage.BLL
             return false;
         }
         //Xoá chương trong CSDL
-        public bool DelChapter(string MaChuong)
+        public bool DelChapter(Chuong_DTO chuong_DTO)
         {
-            string sql = "delete form Chuong where MaChuong = '" + MaChuong + "'";
+            string sql = string.Format("delete from Chuong where MaChuong = '{0}'",chuong_DTO.MaChuong);
             if(connData.RunSQL(sql))
             {
                 MessageBox.Show("Xoá thông tin Chương thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);

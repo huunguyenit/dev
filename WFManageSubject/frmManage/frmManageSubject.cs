@@ -138,7 +138,24 @@ namespace frmManage
             }
             if (t != 1)
             {
-                clsAddTab.AddTab(tcView, "Thông môn học", new GUI.InfoSubject());
+                clsAddTab.AddTab(tcView, "Thông tin môn học", new GUI.InfoChapter());
+            }
+        }
+
+        private void btnInfoDocument_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Thông tin tài liệu")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Thông tin tài liệu", new GUI.InfoDocument());
             }
         }
     }
