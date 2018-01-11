@@ -21,13 +21,12 @@ namespace frmManage.BLL
             return connData.GetData(sql);
         }
 
-        //Lấy danh sách Chương để load tbx
         public DataTable GetChapterLoad()
         {
-            //string sql = "select MaChuong from TaiLieu where MaChuong = '" + taiLieu_DTO.MaChuong_TL + "'";
-            string sql = "select Chuong.MaChuong, Chuong.TenChuong from TaiLieu, Chuong where Chuong.MaChuong = TaiLieu.MaChuong_TL";
+            string sql = "select TenChuong, MaChuong from Chuong";
             return connData.GetData(sql);
         }
+
         //Kiểm tra trước khi lưu
         public bool CheckBeforeSave(Chuong_DTO chuong_DTO)
         {

@@ -24,7 +24,7 @@ namespace frmManage.BLL
         {
             if (taiLieu_DTO.TenTL.Equals(""))
             {
-                MessageBox.Show("Tên Chương không hợp lệ!");
+                MessageBox.Show("Tên tài liệu không hợp lệ!");
                 return false;
             }
             return true;
@@ -63,7 +63,7 @@ namespace frmManage.BLL
             string sql = string.Format("delete from TaiLieu where TenTL = N'{0}'", taiLieu_DTO.TenTL);
             if (connData.RunSQL(sql))
             {
-                MessageBox.Show("Xoá thông tin Chương thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Xoá thông tin tài liệu thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return true;
             }
             return false;

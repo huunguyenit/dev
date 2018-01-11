@@ -32,7 +32,7 @@
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.gbxInfoSubject = new DevExpress.XtraEditors.GroupControl();
+            this.gbxInfoChapter = new DevExpress.XtraEditors.GroupControl();
             this.cbxImportant = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cbxSubject = new DevExpress.XtraEditors.LookUpEdit();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,8 +56,8 @@
             this.gvcImportant = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gbxFunction)).BeginInit();
             this.gbxFunction.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gbxInfoSubject)).BeginInit();
-            this.gbxInfoSubject.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gbxInfoChapter)).BeginInit();
+            this.gbxInfoChapter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbxImportant.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxSubject.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbxIdChapter.Properties)).BeginInit();
@@ -107,25 +107,25 @@
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // gbxInfoSubject
+            // gbxInfoChapter
             // 
-            this.gbxInfoSubject.Controls.Add(this.cbxImportant);
-            this.gbxInfoSubject.Controls.Add(this.cbxSubject);
-            this.gbxInfoSubject.Controls.Add(this.label1);
-            this.gbxInfoSubject.Controls.Add(this.tbxIdChapter);
-            this.gbxInfoSubject.Controls.Add(this.tbxChapter);
-            this.gbxInfoSubject.Controls.Add(this.btnCancel);
-            this.gbxInfoSubject.Controls.Add(this.btnSave);
-            this.gbxInfoSubject.Controls.Add(this.lblIDChapter);
-            this.gbxInfoSubject.Controls.Add(this.lblChapter);
-            this.gbxInfoSubject.Controls.Add(this.lblImportant);
-            this.gbxInfoSubject.Controls.Add(this.lblSubject);
-            this.gbxInfoSubject.Enabled = false;
-            this.gbxInfoSubject.Location = new System.Drawing.Point(209, 3);
-            this.gbxInfoSubject.Name = "gbxInfoSubject";
-            this.gbxInfoSubject.Size = new System.Drawing.Size(618, 166);
-            this.gbxInfoSubject.TabIndex = 2;
-            this.gbxInfoSubject.Text = "Thông tin môn học";
+            this.gbxInfoChapter.Controls.Add(this.cbxImportant);
+            this.gbxInfoChapter.Controls.Add(this.cbxSubject);
+            this.gbxInfoChapter.Controls.Add(this.label1);
+            this.gbxInfoChapter.Controls.Add(this.tbxIdChapter);
+            this.gbxInfoChapter.Controls.Add(this.tbxChapter);
+            this.gbxInfoChapter.Controls.Add(this.btnCancel);
+            this.gbxInfoChapter.Controls.Add(this.btnSave);
+            this.gbxInfoChapter.Controls.Add(this.lblIDChapter);
+            this.gbxInfoChapter.Controls.Add(this.lblChapter);
+            this.gbxInfoChapter.Controls.Add(this.lblImportant);
+            this.gbxInfoChapter.Controls.Add(this.lblSubject);
+            this.gbxInfoChapter.Enabled = false;
+            this.gbxInfoChapter.Location = new System.Drawing.Point(209, 3);
+            this.gbxInfoChapter.Name = "gbxInfoChapter";
+            this.gbxInfoChapter.Size = new System.Drawing.Size(618, 166);
+            this.gbxInfoChapter.TabIndex = 2;
+            this.gbxInfoChapter.Text = "Thông tin môn học";
             // 
             // cbxImportant
             // 
@@ -294,7 +294,7 @@
             // gvcSubject
             // 
             this.gvcSubject.Caption = "Mã MH";
-            this.gvcSubject.FieldName = "MaMH_Chuong";
+            this.gvcSubject.FieldName = "MaMH";
             this.gvcSubject.Name = "gvcSubject";
             this.gvcSubject.Visible = true;
             this.gvcSubject.VisibleIndex = 1;
@@ -316,16 +316,16 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.dgvChapter);
-            this.Controls.Add(this.gbxInfoSubject);
+            this.Controls.Add(this.gbxInfoChapter);
             this.Controls.Add(this.gbxFunction);
             this.Name = "InfoChapter";
             this.Size = new System.Drawing.Size(830, 350);
             this.Load += new System.EventHandler(this.InfoSubject_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gbxFunction)).EndInit();
             this.gbxFunction.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gbxInfoSubject)).EndInit();
-            this.gbxInfoSubject.ResumeLayout(false);
-            this.gbxInfoSubject.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gbxInfoChapter)).EndInit();
+            this.gbxInfoChapter.ResumeLayout(false);
+            this.gbxInfoChapter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbxImportant.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxSubject.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbxIdChapter.Properties)).EndInit();
@@ -338,7 +338,7 @@
 
         #endregion
         private DevExpress.XtraEditors.GroupControl gbxFunction;
-        private DevExpress.XtraEditors.GroupControl gbxInfoSubject;
+        private DevExpress.XtraEditors.GroupControl gbxInfoChapter;
         private DevExpress.XtraEditors.SimpleButton btnEdit;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnAdd;

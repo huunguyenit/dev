@@ -139,6 +139,9 @@
   <data name="imgLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgLogout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imgTestColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgTestColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imgChangPass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgChangPass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,14 +157,14 @@
   <data name="imgSubject1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSubject1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgTestColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgTestColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="imgHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgAddPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgAddPlus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgChaterBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgChaterBook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,10 +178,13 @@
   <data name="imgSearchTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSearchTest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imgPen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgPen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imgSubject" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSubject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgPen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgPen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

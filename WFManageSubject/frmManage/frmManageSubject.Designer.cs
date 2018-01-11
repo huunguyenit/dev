@@ -30,6 +30,7 @@ namespace frmManage
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManageSubject));
             this.rbcMenu = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnLogin = new DevExpress.XtraBars.BarButtonItem();
@@ -47,6 +48,9 @@ namespace frmManage
             this.barHeaderItem1 = new DevExpress.XtraBars.BarHeaderItem();
             this.btnInfoChapter = new DevExpress.XtraBars.BarButtonItem();
             this.btnReportChapter = new DevExpress.XtraBars.BarButtonItem();
+            this.btnInfoTest = new DevExpress.XtraBars.BarButtonItem();
+            this.btnReportTest = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSearchTest = new DevExpress.XtraBars.BarButtonItem();
             this.rbpHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -56,6 +60,7 @@ namespace frmManage
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.tcView = new DevExpress.XtraTab.XtraTabControl();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.rbcMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcView)).BeginInit();
             this.SuspendLayout();
@@ -80,15 +85,18 @@ namespace frmManage
             this.btnSearchTest_Exercise,
             this.barHeaderItem1,
             this.btnInfoChapter,
-            this.btnReportChapter});
+            this.btnReportChapter,
+            this.btnInfoTest,
+            this.btnReportTest,
+            this.btnSearchTest});
             this.rbcMenu.Location = new System.Drawing.Point(0, 0);
-            this.rbcMenu.MaxItemId = 17;
+            this.rbcMenu.MaxItemId = 20;
             this.rbcMenu.Name = "rbcMenu";
             this.rbcMenu.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbpHome,
             this.rbpReport,
             this.rbpSearch});
-            this.rbcMenu.Size = new System.Drawing.Size(852, 146);
+            this.rbcMenu.Size = new System.Drawing.Size(854, 149);
             // 
             // btnLogin
             // 
@@ -140,6 +148,7 @@ namespace frmManage
             this.btnInfoTest_Exercise.Id = 6;
             this.btnInfoTest_Exercise.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgTestColor;
             this.btnInfoTest_Exercise.Name = "btnInfoTest_Exercise";
+            this.btnInfoTest_Exercise.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInfoTest_Exercise_ItemClick);
             // 
             // btnReportTest_Exercise
             // 
@@ -211,6 +220,31 @@ namespace frmManage
             this.btnReportChapter.Id = 16;
             this.btnReportChapter.Name = "btnReportChapter";
             // 
+            // btnInfoTest
+            // 
+            this.btnInfoTest.Caption = "Bài thi";
+            this.btnInfoTest.Enabled = false;
+            this.btnInfoTest.Id = 17;
+            this.btnInfoTest.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgPen;
+            this.btnInfoTest.Name = "btnInfoTest";
+            this.btnInfoTest.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInfoTest_ItemClick);
+            // 
+            // btnReportTest
+            // 
+            this.btnReportTest.Caption = "Bài thi";
+            this.btnReportTest.Enabled = false;
+            this.btnReportTest.Id = 18;
+            this.btnReportTest.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgPen;
+            this.btnReportTest.Name = "btnReportTest";
+            // 
+            // btnSearchTest
+            // 
+            this.btnSearchTest.Caption = "Bài thi";
+            this.btnSearchTest.Enabled = false;
+            this.btnSearchTest.Id = 19;
+            this.btnSearchTest.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgPen1;
+            this.btnSearchTest.Name = "btnSearchTest";
+            // 
             // rbpHome
             // 
             this.rbpHome.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -233,6 +267,7 @@ namespace frmManage
             this.ribbonPageGroup2.ItemLinks.Add(this.btnInfoChapter);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnInfoDocument);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnInfoTest_Exercise);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnInfoTest);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Quản lý";
             // 
@@ -248,6 +283,7 @@ namespace frmManage
             this.ribbonPageGroup3.ItemLinks.Add(this.btnReportSubject);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnReportDocumnet);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnReportTest_Exercise);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnReportTest);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
             // rbpSearch
@@ -262,6 +298,7 @@ namespace frmManage
             this.ribbonPageGroup4.ItemLinks.Add(this.btnSearchSubject);
             this.ribbonPageGroup4.ItemLinks.Add(this.btnSearchDocument);
             this.ribbonPageGroup4.ItemLinks.Add(this.btnSearchTest_Exercise);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnSearchTest);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
             // ribbonPage2
@@ -276,12 +313,16 @@ namespace frmManage
             this.tcView.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InActiveTabPageHeader;
             this.tcView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcView.HeaderButtons = DevExpress.XtraTab.TabButtons.Close;
-            this.tcView.Location = new System.Drawing.Point(0, 146);
+            this.tcView.Location = new System.Drawing.Point(0, 149);
             this.tcView.Name = "tcView";
-            this.tcView.Size = new System.Drawing.Size(852, 388);
+            this.tcView.Size = new System.Drawing.Size(854, 386);
             this.tcView.TabIndex = 1;
             this.tcView.CloseButtonClick += new System.EventHandler(this.tcView_CloseButtonClick_1);
             this.tcView.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.tcView_ControlAdded);
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Money Twins";
             // 
             // frmManageSubject
             // 
@@ -291,7 +332,7 @@ namespace frmManage
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Stretch;
             this.BackgroundImageStore = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImageStore")));
-            this.ClientSize = new System.Drawing.Size(852, 534);
+            this.ClientSize = new System.Drawing.Size(854, 535);
             this.Controls.Add(this.tcView);
             this.Controls.Add(this.rbcMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -333,6 +374,10 @@ namespace frmManage
         private DevExpress.XtraTab.XtraTabControl tcView;
         private BarButtonItem btnInfoChapter;
         private BarButtonItem btnReportChapter;
+        private BarButtonItem btnInfoTest;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private BarButtonItem btnReportTest;
+        private BarButtonItem btnSearchTest;
     }
 }
 

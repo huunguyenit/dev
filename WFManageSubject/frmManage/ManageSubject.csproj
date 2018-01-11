@@ -116,6 +116,18 @@
     <Compile Include="GUI\InfoChapter.Designer.cs">
       <DependentUpon>InfoChapter.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\InfoTestExcersice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\InfoTestExcersice.Designer.cs">
+      <DependentUpon>InfoTestExcersice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InfoTestSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\InfoTestSubject.Designer.cs">
+      <DependentUpon>InfoTestSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities.cs" />
@@ -133,6 +145,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\InfoChapter.resx">
       <DependentUpon>InfoChapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InfoTestExcersice.resx">
+      <DependentUpon>InfoTestExcersice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InfoTestSubject.resx">
+      <DependentUpon>InfoTestSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -221,6 +239,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPen1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -24,14 +24,6 @@ namespace frmManage.DTO
             set { _DiemThi = value; }
         }
 
-        private int _HocKy;
-
-        public int HocKy
-        {
-            get { return _HocKy; }
-            set { _HocKy = value; }
-        }
-
         private string _MaMH;
 
         public string MaMH

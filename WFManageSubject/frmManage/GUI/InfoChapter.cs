@@ -46,20 +46,20 @@ namespace frmManage.GUI
         private void InfoSubject_Load(object sender, System.EventArgs e)
         {
             //Load combobox Môn học
-            cbxSubject.Properties.DataSource = mhBUS.GetListSubject();
+            cbxSubject.Properties.DataSource = mhBUS.GetSubjectLoad();
             cbxSubject.Properties.DisplayMember = "TenMH";
             cbxSubject.Properties.ValueMember = "MaMH";
 
             //Load dgvChapter
             dgvChapter.DataSource = cBUS.GetListChapter();
-            gbxInfoSubject.Enabled = false;
+            gbxInfoChapter.Enabled = false;
             Binding();
         }
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
             add = true; update = false;
-            gbxInfoSubject.Enabled = true;
+            gbxInfoChapter.Enabled = true;
             //Load NextID len tbxIDChapter
             tbxIdChapter.Text = cBUS.NextID();
             Deltbx();
@@ -80,7 +80,7 @@ namespace frmManage.GUI
         private void btnEdit_Click(object sender, System.EventArgs e)
         {
             update = true; add = false;
-            gbxInfoSubject.Enabled = true;
+            gbxInfoChapter.Enabled = true;
             tbxChapter.Focus();
         }
 

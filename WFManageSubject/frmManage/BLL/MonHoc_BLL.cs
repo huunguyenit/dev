@@ -14,7 +14,7 @@ namespace frmManage.BLL
         ConnectDB connectData = new ConnectDB();
 
         //Lấy danh sách Môn học load sang combobox
-        public DataTable GetListSubject()
+        public DataTable GetSubjectLoad()
         {
             string sql = "select MaMH, TenMH from MonHoc";
             return connectData.GetData(sql);

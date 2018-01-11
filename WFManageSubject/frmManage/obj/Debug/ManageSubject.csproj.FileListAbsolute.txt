@@ -226,3 +226,5 @@ D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.frmManageSu
 D:\WpManageSubject\dev\WFManageSubject\frmManage\bin\Debug\frmManage.exe.config
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoDocument.resources
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoChapter.resources
+D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoTestExcersice.resources
+D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoTestSubject.resources

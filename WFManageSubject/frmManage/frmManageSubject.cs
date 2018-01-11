@@ -51,14 +51,17 @@ namespace frmManage
             btnInfoChapter.Enabled = logged;
             btnInfoDocument.Enabled = logged;
             btnInfoTest_Exercise.Enabled = logged;
+            btnInfoTest.Enabled = logged;
             //
             btnSearchSubject.Enabled = logged;
             btnSearchDocument.Enabled = logged;
             btnSearchTest_Exercise.Enabled = logged;
+            btnSearchTest.Enabled = logged;
             //
             btnReportSubject.Enabled = logged;
             btnReportDocumnet.Enabled = logged;
             btnReportTest_Exercise.Enabled = logged;
+            btnReportTest.Enabled = logged;
         }
 
         #endregion
@@ -156,6 +159,40 @@ namespace frmManage
             if (t != 1)
             {
                 clsAddTab.AddTab(tcView, "Thông tin tài liệu", new GUI.InfoDocument());
+            }
+        }
+
+        private void btnInfoTest_Exercise_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Thông tin bài tập, bài kiểm tra")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Thông tin bài tập, bài kiểm tra", new GUI.InfoTestExcersice());
+            }
+        }
+
+        private void btnInfoTest_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Thông tin bài thi")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Thông tin bài thi", new GUI.InfoTestSubject());
             }
         }
     }
