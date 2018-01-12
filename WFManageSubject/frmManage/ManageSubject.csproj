@@ -128,8 +128,19 @@
     <Compile Include="GUI\InfoTestSubject.Designer.cs">
       <DependentUpon>InfoTestSubject.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\SearchDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SearchDocument.Designer.cs">
+      <DependentUpon>SearchDocument.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="frmManageSubject.resx">
       <DependentUpon>frmManageSubject.cs</DependentUpon>
@@ -152,17 +163,15 @@
     <EmbeddedResource Include="GUI\InfoTestSubject.resx">
       <DependentUpon>InfoTestSubject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SearchDocument.resx">
+      <DependentUpon>SearchDocument.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -175,7 +184,46 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\imgChangeKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgChangPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLogout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPageHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgfolderdocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgTestColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgChaterBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgfolderdocument1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchSubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchChapter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearchTest.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imgLoginLock.png" />
@@ -187,40 +235,7 @@
     <None Include="Resources\imgCancel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\imgChangPass.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgLogout.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgHome.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgPageHome.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSubject.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgChaterBook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgfolderdocument.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgTestColor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSubject1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSearchSubject.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSearchChapter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgSearchTest.png" />
+    <None Include="Resources\imgChangePass24.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imgAddPlus.png" />
@@ -235,16 +250,7 @@
     <None Include="Resources\imgSave.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\imgStop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\DataSources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgPen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgPen1.png" />
+    <None Include="Resources\imgExit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoDocument));
             this.gbxFunction = new DevExpress.XtraEditors.GroupControl();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
@@ -156,7 +157,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.ImageOptions.Image = global::frmManage.Properties.Resources.imgStop;
+            this.btnCancel.ImageOptions.Image = global::frmManage.Properties.Resources.imgExit;
             this.btnCancel.Location = new System.Drawing.Point(526, 133);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -250,6 +251,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.dgvDocument);
             this.Controls.Add(this.gbxInfoDocument);
             this.Controls.Add(this.gbxFunction);

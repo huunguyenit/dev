@@ -43,7 +43,7 @@ namespace frmManage.BLL
             }
             return false;
         }
-        //Sửa chương trong CSDL
+        //Sửa tài liệu trong CSDL
         public bool EditDocument(TaiLieu_DTO taiLieu_DTO)
         {
             if (CheckBeforeSave(taiLieu_DTO))
@@ -57,7 +57,7 @@ namespace frmManage.BLL
             }
             return false;
         }
-        //Xoá chương trong CSDL
+        //Xoá tài liệu trong CSDL
         public bool DelDocument(TaiLieu_DTO taiLieu_DTO)
         {
             string sql = string.Format("delete from TaiLieu where TenTL = N'{0}'", taiLieu_DTO.TenTL);
@@ -67,6 +67,26 @@ namespace frmManage.BLL
                 return true;
             }
             return false;
+        }
+        //Tìm kiếm tài liệu
+        public DataTable SearchDocument(string DieuKien, string TieuChi)
+        {
+            string sql;
+
+            if (DieuKien!="QuanTrong")
+            {
+                sql = "Select TenTL, MaChuong_TL, (CASE QuanTrong when 'true' then N'Đúng' else N'Sai' end)as QuanTrong from TaiLieu where " + DieuKien + " like N'%" + TieuChi + "%'";
+            }
+            else
+            {
+                int trueorfalse = 0;
+                if (TieuChi == "true")
+                {
+                    trueorfalse = 1;
+                }
+                sql = "Select TenTL, MaChuong_TL, (CASE QuanTrong when 'true' then N'Đúng' else N'Sai' end) as QuanTrong from TaiLieu where QuanTrong = " + trueorfalse;
+            }
+            return connData.GetData(sql);
         }
     }
 }

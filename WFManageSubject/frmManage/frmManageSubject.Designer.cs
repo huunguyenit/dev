@@ -129,7 +129,6 @@ namespace frmManage
             this.btnInfoSubject.Caption = "Thông tin môn học";
             this.btnInfoSubject.Enabled = false;
             this.btnInfoSubject.Id = 4;
-            this.btnInfoSubject.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgSubject;
             this.btnInfoSubject.Name = "btnInfoSubject";
             // 
             // btnInfoDocument
@@ -163,15 +162,15 @@ namespace frmManage
             this.btnReportDocumnet.Caption = "Tài liệu";
             this.btnReportDocumnet.Enabled = false;
             this.btnReportDocumnet.Id = 8;
-            this.btnReportDocumnet.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgfolderdocument;
+            this.btnReportDocumnet.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgfolderdocument1;
             this.btnReportDocumnet.Name = "btnReportDocumnet";
             // 
             // btnReportSubject
             // 
-            this.btnReportSubject.Caption = "Chương";
+            this.btnReportSubject.Caption = "Môn học";
             this.btnReportSubject.Enabled = false;
             this.btnReportSubject.Id = 9;
-            this.btnReportSubject.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgSubject1;
+            this.btnReportSubject.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgChaterBook;
             this.btnReportSubject.Name = "btnReportSubject";
             // 
             // btnSearchSubject
@@ -181,6 +180,7 @@ namespace frmManage
             this.btnSearchSubject.Id = 10;
             this.btnSearchSubject.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgSearchSubject;
             this.btnSearchSubject.Name = "btnSearchSubject";
+            this.btnSearchSubject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSearchSubject_ItemClick);
             // 
             // btnSearchDocument
             // 
@@ -189,6 +189,7 @@ namespace frmManage
             this.btnSearchDocument.Id = 11;
             this.btnSearchDocument.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgSearchChapter;
             this.btnSearchDocument.Name = "btnSearchDocument";
+            this.btnSearchDocument.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSearchDocument_ItemClick);
             // 
             // btnSearchTest_Exercise
             // 
@@ -209,7 +210,7 @@ namespace frmManage
             this.btnInfoChapter.Caption = "Thông tin chương";
             this.btnInfoChapter.Enabled = false;
             this.btnInfoChapter.Id = 15;
-            this.btnInfoChapter.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgChaterBook;
+            this.btnInfoChapter.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgSubject;
             this.btnInfoChapter.Name = "btnInfoChapter";
             this.btnInfoChapter.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInfoChapter_ItemClick);
             // 
@@ -225,7 +226,7 @@ namespace frmManage
             this.btnInfoTest.Caption = "Bài thi";
             this.btnInfoTest.Enabled = false;
             this.btnInfoTest.Id = 17;
-            this.btnInfoTest.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgPen;
+            this.btnInfoTest.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgTest;
             this.btnInfoTest.Name = "btnInfoTest";
             this.btnInfoTest.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInfoTest_ItemClick);
             // 
@@ -234,7 +235,6 @@ namespace frmManage
             this.btnReportTest.Caption = "Bài thi";
             this.btnReportTest.Enabled = false;
             this.btnReportTest.Id = 18;
-            this.btnReportTest.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgPen;
             this.btnReportTest.Name = "btnReportTest";
             // 
             // btnSearchTest
@@ -242,7 +242,6 @@ namespace frmManage
             this.btnSearchTest.Caption = "Bài thi";
             this.btnSearchTest.Enabled = false;
             this.btnSearchTest.Id = 19;
-            this.btnSearchTest.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgPen1;
             this.btnSearchTest.Name = "btnSearchTest";
             // 
             // rbpHome
@@ -283,7 +282,6 @@ namespace frmManage
             this.ribbonPageGroup3.ItemLinks.Add(this.btnReportSubject);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnReportDocumnet);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnReportTest_Exercise);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnReportTest);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
             // rbpSearch
@@ -298,7 +296,6 @@ namespace frmManage
             this.ribbonPageGroup4.ItemLinks.Add(this.btnSearchSubject);
             this.ribbonPageGroup4.ItemLinks.Add(this.btnSearchDocument);
             this.ribbonPageGroup4.ItemLinks.Add(this.btnSearchTest_Exercise);
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnSearchTest);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
             // ribbonPage2

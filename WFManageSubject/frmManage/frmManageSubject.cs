@@ -195,5 +195,28 @@ namespace frmManage
                 clsAddTab.AddTab(tcView, "Thông tin bài thi", new GUI.InfoTestSubject());
             }
         }
+
+        private void btnSearchSubject_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnSearchDocument_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Tìm kiếm tài liệu")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Tìm kiếm tài liệu", new GUI.SearchDocument());
+            }
+        }
     }
 }

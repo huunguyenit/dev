@@ -23,7 +23,7 @@ namespace frmManage.BLL
 
         public DataTable GetChapterLoad()
         {
-            string sql = "select TenChuong, MaChuong from Chuong";
+            string sql = "select MaChuong, TenChuong from Chuong";
             return connData.GetData(sql);
         }
 

@@ -63,7 +63,7 @@ namespace frmManage.BLL
         {
             if (CheckBeforeSave(baiTap_KiemTra))
             {
-                string sql = string.Format("UPDATE BaiTap_KiemTra SET TenBT_KT =N'{1}' ,MaChuong_BK = '{2}',DiemBT_KT= '{3}',MaMH_BK ='{4}',MaHS_BK='{5}',MaNhom_BK='{6}',BaiNhom={7},BaiTap={8} WHERE MaBT_KT='{0}' ",baiTap_KiemTra.MaBT_KT,baiTap_KiemTra.TenBT_KT,baiTap_KiemTra.MaChuong_BK,baiTap_KiemTra.DiemBT_KT,baiTap_KiemTra.MaMH_BK,baiTap_KiemTra.MaHS_BK,baiTap_KiemTra.MaNhom_BK,baiTap_KiemTra.BaiNhom,baiTap_KiemTra.BaiTap);
+                string sql = string.Format("UPDATE BaiTap_KiemTra SET TenBT_KT =N'{1}' ,MaChuong_BK = '{2}',DiemBT_KT= '{3}',MaMH_BK ='{4}',MaHS_BK='{5}',MaNhom_BK={6},BaiNhom={7},BaiTap={8} WHERE MaBT_KT='{0}' ",baiTap_KiemTra.MaBT_KT,baiTap_KiemTra.TenBT_KT,baiTap_KiemTra.MaChuong_BK,baiTap_KiemTra.DiemBT_KT,baiTap_KiemTra.MaMH_BK,baiTap_KiemTra.MaHS_BK,baiTap_KiemTra.MaNhom_BK,baiTap_KiemTra.BaiNhom,baiTap_KiemTra.BaiTap);
                 if (connData.RunSQL(sql))
                 {
                     MessageBox.Show("Sửa thông tin bài thành công !", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);

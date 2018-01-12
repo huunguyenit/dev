@@ -1,4 +1,6 @@
-﻿namespace frmManage.GUI
+﻿using DevExpress.Utils;
+
+namespace frmManage.GUI
 {
     partial class InfoChapter
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoChapter));
             this.gbxFunction = new DevExpress.XtraEditors.GroupControl();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
@@ -47,13 +50,12 @@
             this.dgvColID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dgvColSubject = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dgvColTeacher = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gcChapter = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dgvChapter = new DevExpress.XtraGrid.GridControl();
             this.gvChapter = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gvcIDChapter = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gvcChapter = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gvcSubject = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gvcImportant = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gcIDChapter = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gcChapter = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gcSubject = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gcImportant = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gbxFunction)).BeginInit();
             this.gbxFunction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gbxInfoChapter)).BeginInit();
@@ -175,7 +177,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.ImageOptions.Image = global::frmManage.Properties.Resources.imgStop;
+            this.btnCancel.ImageOptions.Image = global::frmManage.Properties.Resources.imgExit;
             this.btnCancel.Location = new System.Drawing.Point(526, 133);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -245,13 +247,6 @@
             this.dgvColTeacher.Visible = true;
             this.dgvColTeacher.VisibleIndex = 1;
             // 
-            // gcChapter
-            // 
-            this.gcChapter.Caption = "Chương";
-            this.gcChapter.Name = "gcChapter";
-            this.gcChapter.Visible = true;
-            this.gcChapter.VisibleIndex = 0;
-            // 
             // dgvChapter
             // 
             this.dgvChapter.Location = new System.Drawing.Point(3, 175);
@@ -265,55 +260,60 @@
             // gvChapter
             // 
             this.gvChapter.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gvcIDChapter,
-            this.gvcChapter,
-            this.gvcSubject,
-            this.gvcImportant});
+            this.gcIDChapter,
+            this.gcChapter,
+            this.gcSubject,
+            this.gcImportant});
             this.gvChapter.GridControl = this.dgvChapter;
             this.gvChapter.Name = "gvChapter";
             this.gvChapter.OptionsView.ShowGroupPanel = false;
             // 
-            // gvcIDChapter
+            // gcIDChapter
             // 
-            this.gvcIDChapter.Caption = "Mã chương";
-            this.gvcIDChapter.FieldName = "MaChuong";
-            this.gvcIDChapter.Name = "gvcIDChapter";
-            this.gvcIDChapter.Visible = true;
-            this.gvcIDChapter.VisibleIndex = 0;
-            this.gvcIDChapter.Width = 65;
+            this.gcIDChapter.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gcIDChapter.Caption = "Mã chương";
+            this.gcIDChapter.FieldName = "MaChuong";
+            this.gcIDChapter.Name = "gcIDChapter";
+            this.gcIDChapter.Visible = true;
+            this.gcIDChapter.VisibleIndex = 0;
+            this.gcIDChapter.Width = 65;
             // 
-            // gvcChapter
+            // gcChapter
             // 
-            this.gvcChapter.Caption = "Tên Chương";
-            this.gvcChapter.FieldName = "TenChuong";
-            this.gvcChapter.Name = "gvcChapter";
-            this.gvcChapter.Visible = true;
-            this.gvcChapter.VisibleIndex = 2;
-            this.gvcChapter.Width = 453;
+            this.gcChapter.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gcChapter.Caption = "Tên Chương";
+            this.gcChapter.FieldName = "TenChuong";
+            this.gcChapter.Name = "gcChapter";
+            this.gcChapter.Visible = true;
+            this.gcChapter.VisibleIndex = 2;
+            this.gcChapter.Width = 453;
             // 
-            // gvcSubject
+            // gcSubject
             // 
-            this.gvcSubject.Caption = "Mã MH";
-            this.gvcSubject.FieldName = "MaMH";
-            this.gvcSubject.Name = "gvcSubject";
-            this.gvcSubject.Visible = true;
-            this.gvcSubject.VisibleIndex = 1;
-            this.gvcSubject.Width = 62;
+            this.gcSubject.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gcSubject.Caption = "Mã MH";
+            this.gcSubject.FieldName = "MaMH_Chuong";
+            this.gcSubject.Name = "gcSubject";
+            this.gcSubject.Visible = true;
+            this.gcSubject.VisibleIndex = 1;
+            this.gcSubject.Width = 62;
             // 
-            // gvcImportant
+            // gcImportant
             // 
-            this.gvcImportant.Caption = "Quan trọng";
-            this.gvcImportant.FieldName = "QuanTrong";
-            this.gvcImportant.Name = "gvcImportant";
-            this.gvcImportant.Visible = true;
-            this.gvcImportant.VisibleIndex = 3;
-            this.gvcImportant.Width = 112;
+            this.gcImportant.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gcImportant.Caption = "Quan trọng";
+            this.gcImportant.FieldName = "QuanTrong";
+            this.gcImportant.Name = "gcImportant";
+            this.gcImportant.Visible = true;
+            this.gcImportant.VisibleIndex = 3;
+            this.gcImportant.Width = 112;
             // 
             // InfoChapter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.dgvChapter);
             this.Controls.Add(this.gbxInfoChapter);
@@ -356,12 +356,11 @@
         private DevExpress.XtraEditors.ComboBoxEdit cbxImportant;
         private DevExpress.XtraEditors.TextEdit tbxIdChapter;
         private DevExpress.XtraEditors.LabelControl lblIDChapter;
-        private DevExpress.XtraGrid.Columns.GridColumn gcChapter;
         private DevExpress.XtraGrid.GridControl dgvChapter;
         private DevExpress.XtraGrid.Views.Grid.GridView gvChapter;
-        private DevExpress.XtraGrid.Columns.GridColumn gvcChapter;
-        private DevExpress.XtraGrid.Columns.GridColumn gvcImportant;
-        private DevExpress.XtraGrid.Columns.GridColumn gvcSubject;
-        private DevExpress.XtraGrid.Columns.GridColumn gvcIDChapter;
+        private DevExpress.XtraGrid.Columns.GridColumn gcChapter;
+        private DevExpress.XtraGrid.Columns.GridColumn gcImportant;
+        private DevExpress.XtraGrid.Columns.GridColumn gcSubject;
+        private DevExpress.XtraGrid.Columns.GridColumn gcIDChapter;
     }
 }

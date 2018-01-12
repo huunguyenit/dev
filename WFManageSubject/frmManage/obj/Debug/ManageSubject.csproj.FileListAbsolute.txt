@@ -228,3 +228,4 @@ D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoDoc
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoChapter.resources
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoTestExcersice.resources
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.InfoTestSubject.resources
+D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.SearchDocument.resources

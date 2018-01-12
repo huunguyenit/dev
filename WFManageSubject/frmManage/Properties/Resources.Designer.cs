@@ -113,6 +113,16 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgChangePass24 {
+            get {
+                object obj = ResourceManager.GetObject("imgChangePass24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imgChangPass {
             get {
                 object obj = ResourceManager.GetObject("imgChangPass", resourceCulture);
@@ -133,6 +143,16 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgExit {
+            get {
+                object obj = ResourceManager.GetObject("imgExit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imgfolderdocument {
             get {
                 object obj = ResourceManager.GetObject("imgfolderdocument", resourceCulture);
@@ -143,9 +163,9 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imgHome {
+        internal static System.Drawing.Bitmap imgfolderdocument1 {
             get {
-                object obj = ResourceManager.GetObject("imgHome", resourceCulture);
+                object obj = ResourceManager.GetObject("imgfolderdocument1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,26 +196,6 @@ namespace frmManage.Properties {
         internal static System.Drawing.Bitmap imgPageHome {
             get {
                 object obj = ResourceManager.GetObject("imgPageHome", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgPen {
-            get {
-                object obj = ResourceManager.GetObject("imgPen", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgPen1 {
-            get {
-                object obj = ResourceManager.GetObject("imgPen1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,16 +243,6 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imgStop {
-            get {
-                object obj = ResourceManager.GetObject("imgStop", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap imgSubject {
             get {
                 object obj = ResourceManager.GetObject("imgSubject", resourceCulture);
@@ -263,9 +253,9 @@ namespace frmManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imgSubject1 {
+        internal static System.Drawing.Bitmap imgTest {
             get {
-                object obj = ResourceManager.GetObject("imgSubject1", resourceCulture);
+                object obj = ResourceManager.GetObject("imgTest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

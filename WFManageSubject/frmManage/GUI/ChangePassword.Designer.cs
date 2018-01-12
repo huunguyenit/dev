@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePassword));
             this.lblChangePasword = new DevExpress.XtraEditors.LabelControl();
             this.lblOldPassword = new DevExpress.XtraEditors.LabelControl();
             this.lblNewPassword = new DevExpress.XtraEditors.LabelControl();
@@ -166,7 +167,7 @@
             // 
             this.btnAcceptChangePassword.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceptChangePassword.Appearance.Options.UseFont = true;
-            this.btnAcceptChangePassword.ImageOptions.Image = global::frmManage.Properties.Resources.imgAccept;
+            this.btnAcceptChangePassword.ImageOptions.Image = global::frmManage.Properties.Resources.imgChangePass24;
             this.btnAcceptChangePassword.Location = new System.Drawing.Point(153, 238);
             this.btnAcceptChangePassword.Margin = new System.Windows.Forms.Padding(4);
             this.btnAcceptChangePassword.Name = "btnAcceptChangePassword";
@@ -179,6 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.panMenuChange);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

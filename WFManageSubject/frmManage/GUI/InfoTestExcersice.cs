@@ -111,13 +111,13 @@ namespace frmManage.GUI
 
         public void DelgbxInfo()
         {
-            cbxSubject.Text = "";
-            cbxChapter.Text = "";
-            cbxTest.Text = "";
-            cbxTestGroup.Text = "";
-            cbxNameGroup.Text = "";
+            cbxSubject.EditValue = "";
+            cbxChapter.EditValue = "";
+            cbxTest.EditValue = "";
+            cbxTestGroup.EditValue = "";
+            cbxNameGroup.EditValue = "";
             tbxNameTest.Text = "";
-            cbxStudent.Text = "";
+            cbxStudent.EditValue = "";
             tbxScore.Text = "";
         }
         private void btnAdd_Click(object sender, EventArgs e)
@@ -168,6 +168,19 @@ namespace frmManage.GUI
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void cbxTestGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbxTestGroup.SelectedIndex==1)
+            {
+                cbxNameGroup.Enabled = false;
+                cbxNameGroup.EditValue = "";
+            }
+            if(cbxTestGroup.SelectedIndex==0)
+            {
+                cbxNameGroup.Enabled = true;
             }
         }
 

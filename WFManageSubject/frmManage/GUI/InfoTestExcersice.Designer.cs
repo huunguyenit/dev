@@ -1,4 +1,6 @@
-﻿namespace frmManage.GUI
+﻿using DevExpress.Utils;
+
+namespace frmManage.GUI
 {
     partial class InfoTestExcersice
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoTestExcersice));
             this.gbxFunction = new DevExpress.XtraEditors.GroupControl();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
@@ -168,6 +171,7 @@
             "Cá nhân"});
             this.cbxTestGroup.Size = new System.Drawing.Size(100, 20);
             this.cbxTestGroup.TabIndex = 23;
+            this.cbxTestGroup.SelectedIndexChanged += new System.EventHandler(this.cbxTestGroup_SelectedIndexChanged);
             // 
             // cbxTest
             // 
@@ -250,7 +254,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.ImageOptions.Image = global::frmManage.Properties.Resources.imgStop;
+            this.btnCancel.ImageOptions.Image = global::frmManage.Properties.Resources.imgExit;
             this.btnCancel.Location = new System.Drawing.Point(526, 133);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -371,6 +375,7 @@
             // 
             // gcScore
             // 
+            this.gcScore.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gcScore.Caption = "Điểm";
             this.gcScore.FieldName = "DiemBT_KT";
             this.gcScore.Name = "gcScore";
@@ -428,6 +433,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.dgvInfoTest);
             this.Controls.Add(this.gbxInfoTestExersice);
             this.Controls.Add(this.gbxFunction);
