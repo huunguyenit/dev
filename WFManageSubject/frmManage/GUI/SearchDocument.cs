@@ -46,7 +46,7 @@ namespace frmManage.GUI
             if (radDocument.Checked)
             {
                 dgvDocument.DataSource = taiLieuBUS.SearchDocument("TenTL", tbxDocument.Text);
-                DelgbxSearh()
+                DelgbxSearh();
             }
             if (radImportant.Checked)
             {
@@ -75,6 +75,8 @@ namespace frmManage.GUI
             if(radChapter.Checked == true)
             {
                 cbxChapter.Enabled = true;
+                tbxDocument.Enabled = false;
+                cbxImportant.Enabled = false;
             }
         }
 
@@ -83,6 +85,8 @@ namespace frmManage.GUI
             if (radDocument.Checked == true)
             {
                 tbxDocument.Enabled = true;
+                cbxChapter.Enabled = false;
+                cbxImportant.Enabled = false;
             }
         }
 
@@ -91,6 +95,8 @@ namespace frmManage.GUI
             if (radImportant.Checked == true)
             {
                 cbxImportant.Enabled = true;
+                tbxDocument.Enabled = false;
+                cbxChapter.Enabled = false;
             }
         }
     }

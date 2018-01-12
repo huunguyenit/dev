@@ -104,7 +104,7 @@ namespace frmManage.GUI
             cbxStudent.Properties.DisplayMember = "TenHS";
             cbxStudent.Properties.ValueMember = "MaHS";
 
-            dgvInfoTest.DataSource = baiTap_KiemTraBUS.GetListTestChapter_Load();
+            dgvInfoTest.DataSource = baiTap_KiemTraBUS.GetListTestChapter();
             gbxInfoTestExersice.Enabled = false;
             Binding();
         }

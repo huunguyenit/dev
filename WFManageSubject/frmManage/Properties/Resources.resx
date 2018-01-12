@@ -127,6 +127,9 @@
   <data name="imgfolderdocument1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgfolderdocument1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="if_filefind_7991" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_filefind_7991.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imgSearchSubject" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSearchSubject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,6 +145,9 @@
   <data name="imgChangPass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgChangPass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imgAccept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgAccept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imgfolderdocument" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgfolderdocument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,8 +157,14 @@
   <data name="imgTrash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgTrash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imgExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imgChangeKey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgChangeKey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_search_51934" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_search_51934.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgSearchChapter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSearchChapter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +178,8 @@
   <data name="imgTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgTest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgAccept" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgAccept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_search_find_61674" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_search_find_61674.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,7 +193,7 @@
   <data name="imgSubject" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSubject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_search_b_44994" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_search_b_44994.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

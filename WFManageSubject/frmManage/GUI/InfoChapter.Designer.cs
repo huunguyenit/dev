@@ -138,6 +138,7 @@ namespace frmManage.GUI
             this.cbxImportant.Properties.Items.AddRange(new object[] {
             "Đúng",
             "Sai"});
+            this.cbxImportant.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbxImportant.Size = new System.Drawing.Size(221, 20);
             this.cbxImportant.TabIndex = 8;
             // 

@@ -77,6 +77,25 @@ namespace frmManage.BLL
             return false;
         }
 
+        //Tìm kiếm chương trong CSDL
+        public DataTable SearchChapter(string DieuKien, string TieuChi)
+        {
+            string sql;
+            if (DieuKien != "QuanTrong")
+            {
+                sql = "Select MaChuong, TenChuong, MaMH_Chuong, (CASE QuanTrong when 'true' then N'Đúng' else N'Sai' end)as QuanTrong from Chuong where " + DieuKien + " like N'%" + TieuChi + "%'";
+            }
+            else
+            {
+                int trueorfalse = 0;
+                if (TieuChi == "true")
+                {
+                    trueorfalse = 1;
+                }
+                sql = "Select MaChuong, TenChuong, MaMH_Chuong, (CASE QuanTrong when 'true' then N'Đúng' else N'Sai' end) as QuanTrong from Chuong where QuanTrong = " + trueorfalse;
+            }
+            return connData.GetData(sql);
+        }
         //Lấy mã Chương tiếp theo
         public string NextID()
         {

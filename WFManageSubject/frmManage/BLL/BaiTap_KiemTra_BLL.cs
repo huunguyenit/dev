@@ -14,7 +14,7 @@ namespace frmManage.BLL
     {
         ConnectDB connData = new ConnectDB();
 
-        public DataTable GetListTestChapter_Load()
+        public DataTable GetListTestChapter()
         {
             string sql = "select MaBT_KT,TenBT_KT,MaChuong_BK,DiemBT_KT,MaMH_BK,MaHS_BK,MaNhom_BK, (CASE BaiTap WHEN 'true' THEN N'Bài tập' ELSE N'Bài kiểm tra' END) AS BaiTap, (CASE BaiNhom WHEN 'true' THEN N'Nhóm' ELSE N'Cá nhân' END) AS BaiNhom from BaiTap_KiemTra";
             return connData.GetData(sql);
@@ -83,6 +83,12 @@ namespace frmManage.BLL
                 return true;
             }
             return false;
+        }
+
+        public DataTable SearchTest_Chapter(string DieuKien, string TieuChi)
+        {
+            string sql = "select * from BaiTap_KiemTra where " + DieuKien + " like N'%" + TieuChi + "%'";
+            return connData.GetData(sql);
         }
 
         public string NextID()

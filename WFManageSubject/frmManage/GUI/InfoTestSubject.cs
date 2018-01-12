@@ -21,9 +21,9 @@ namespace frmManage.GUI
 
         private void DelgbxInfo()
         {
-            cbxSubject.Text = "";
-            cbxStudent.Text = "";
-            tbxScore.Text = "";
+            cbxSubject.EditValue = "";
+            cbxStudent.EditValue = "";
+            tbxScore.EditValue = "";
         }
 
         private void Binding()

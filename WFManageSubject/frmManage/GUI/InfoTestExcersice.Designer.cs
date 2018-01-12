@@ -169,6 +169,7 @@ namespace frmManage.GUI
             this.cbxTestGroup.Properties.Items.AddRange(new object[] {
             "Nhóm",
             "Cá nhân"});
+            this.cbxTestGroup.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbxTestGroup.Size = new System.Drawing.Size(100, 20);
             this.cbxTestGroup.TabIndex = 23;
             this.cbxTestGroup.SelectedIndexChanged += new System.EventHandler(this.cbxTestGroup_SelectedIndexChanged);
@@ -182,6 +183,7 @@ namespace frmManage.GUI
             this.cbxTest.Properties.Items.AddRange(new object[] {
             "Bài tập",
             "Bài kiểm tra"});
+            this.cbxTest.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbxTest.Size = new System.Drawing.Size(100, 20);
             this.cbxTest.TabIndex = 23;
             // 

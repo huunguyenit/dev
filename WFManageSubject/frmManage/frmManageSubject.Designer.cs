@@ -172,6 +172,7 @@ namespace frmManage
             this.btnReportSubject.Id = 9;
             this.btnReportSubject.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgChaterBook;
             this.btnReportSubject.Name = "btnReportSubject";
+            this.btnReportSubject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReportSubject_ItemClick);
             // 
             // btnSearchSubject
             // 
@@ -198,6 +199,7 @@ namespace frmManage
             this.btnSearchTest_Exercise.Id = 12;
             this.btnSearchTest_Exercise.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgSearchTest;
             this.btnSearchTest_Exercise.Name = "btnSearchTest_Exercise";
+            this.btnSearchTest_Exercise.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSearchTest_Exercise_ItemClick);
             // 
             // barHeaderItem1
             // 

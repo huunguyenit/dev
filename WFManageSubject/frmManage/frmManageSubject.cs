@@ -198,7 +198,19 @@ namespace frmManage
 
         private void btnSearchSubject_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Tìm kiếm nội dung môn học")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Tìm kiếm nội dung môn học", new GUI.SearchSubject());
+            }
         }
 
         private void btnSearchDocument_ItemClick(object sender, ItemClickEventArgs e)
@@ -217,6 +229,28 @@ namespace frmManage
             {
                 clsAddTab.AddTab(tcView, "Tìm kiếm tài liệu", new GUI.SearchDocument());
             }
+        }
+
+        private void btnSearchTest_Exercise_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Tìm kiếm bài tập, bài kiểm tra")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Tìm kiếm bài kiểm tra", new GUI.SearchTest_Chapter());
+            }
+        }
+
+        private void btnReportSubject_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }

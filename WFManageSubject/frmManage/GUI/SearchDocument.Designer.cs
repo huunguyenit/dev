@@ -117,18 +117,20 @@
             // 
             // btnShowAll
             // 
-            this.btnShowAll.Location = new System.Drawing.Point(641, 97);
+            this.btnShowAll.ImageOptions.Image = global::frmManage.Properties.Resources.if_search_b_44994;
+            this.btnShowAll.Location = new System.Drawing.Point(640, 100);
             this.btnShowAll.Name = "btnShowAll";
-            this.btnShowAll.Size = new System.Drawing.Size(135, 42);
+            this.btnShowAll.Size = new System.Drawing.Size(135, 45);
             this.btnShowAll.TabIndex = 5;
             this.btnShowAll.Text = "Hiển thị tất cả";
             this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(641, 38);
+            this.btnSearch.ImageOptions.Image = global::frmManage.Properties.Resources.if_search_find_61674;
+            this.btnSearch.Location = new System.Drawing.Point(640, 40);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(135, 42);
+            this.btnSearch.Size = new System.Drawing.Size(135, 45);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -149,6 +151,7 @@
             this.cbxImportant.Properties.Items.AddRange(new object[] {
             "Đúng",
             "Sai"});
+            this.cbxImportant.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbxImportant.Size = new System.Drawing.Size(274, 20);
             this.cbxImportant.TabIndex = 3;
             // 
@@ -164,7 +167,7 @@
             // radImportant
             // 
             this.radImportant.AutoSize = true;
-            this.radImportant.Location = new System.Drawing.Point(199, 122);
+            this.radImportant.Location = new System.Drawing.Point(200, 120);
             this.radImportant.Name = "radImportant";
             this.radImportant.Size = new System.Drawing.Size(114, 17);
             this.radImportant.TabIndex = 1;
@@ -176,7 +179,7 @@
             // radDocument
             // 
             this.radDocument.AutoSize = true;
-            this.radDocument.Location = new System.Drawing.Point(199, 81);
+            this.radDocument.Location = new System.Drawing.Point(200, 80);
             this.radDocument.Name = "radDocument";
             this.radDocument.Size = new System.Drawing.Size(77, 17);
             this.radDocument.TabIndex = 1;
@@ -188,7 +191,7 @@
             // radChapter
             // 
             this.radChapter.AutoSize = true;
-            this.radChapter.Location = new System.Drawing.Point(199, 41);
+            this.radChapter.Location = new System.Drawing.Point(200, 40);
             this.radChapter.Name = "radChapter";
             this.radChapter.Size = new System.Drawing.Size(63, 17);
             this.radChapter.TabIndex = 0;
