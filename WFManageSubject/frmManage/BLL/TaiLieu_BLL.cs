@@ -19,6 +19,12 @@ namespace frmManage.BLL
             string sql = "select TenTL, MaChuong_TL, (Case QuanTrong when 'true' then N'Đúng' else 'Sai' end)as QuanTrong from TaiLieu";
             return connData.GetData(sql);
         }
+
+        public DataTable GetListDocumentRP(TaiLieu_DTO taiLieu)
+        {
+            string sql = "select TenTL, (case QuanTrong when 'true' then N'Đúng' else 'Sai' end) as QuanTrong from TaiLieu where MaChuong_TL = '" + taiLieu.MaChuong_TL + "'";
+            return connData.GetData(sql);
+        }
         //Kiểm tra trước khi lưu
         public bool CheckBeforeSave(TaiLieu_DTO taiLieu_DTO)
         {

@@ -156,6 +156,7 @@ namespace frmManage
             this.btnReportTest_Exercise.Id = 7;
             this.btnReportTest_Exercise.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgTestColor;
             this.btnReportTest_Exercise.Name = "btnReportTest_Exercise";
+            this.btnReportTest_Exercise.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReportTest_Exercise_ItemClick);
             // 
             // btnReportDocumnet
             // 
@@ -164,6 +165,7 @@ namespace frmManage
             this.btnReportDocumnet.Id = 8;
             this.btnReportDocumnet.ImageOptions.LargeImage = global::frmManage.Properties.Resources.imgfolderdocument1;
             this.btnReportDocumnet.Name = "btnReportDocumnet";
+            this.btnReportDocumnet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReportDocumnet_ItemClick);
             // 
             // btnReportSubject
             // 

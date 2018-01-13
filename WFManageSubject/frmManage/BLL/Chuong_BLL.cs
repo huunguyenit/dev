@@ -27,6 +27,11 @@ namespace frmManage.BLL
             return connData.GetData(sql);
         }
 
+        public DataTable GetListChapterRP(Chuong_DTO chuong)
+        {
+            string sql = "select MaChuong, TenChuong, (case QuanTrong when 'true' then N'Đúng' else 'Sai' end) as QuanTrong from Chuong where MaMH_Chuong = '" + chuong.MaMH_Chuong + "'";
+            return connData.GetData(sql);
+        }
         //Kiểm tra trước khi lưu
         public bool CheckBeforeSave(Chuong_DTO chuong_DTO)
         {

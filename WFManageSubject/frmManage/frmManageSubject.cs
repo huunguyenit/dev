@@ -250,7 +250,54 @@ namespace frmManage
 
         private void btnReportSubject_ItemClick(object sender, ItemClickEventArgs e)
         {
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Báo cáo môn học")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Báo cáo môn học", new GUI.ReportSubject());
+            }
+        }
 
+        private void btnReportDocumnet_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Báo cáo tài liệu")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Báo cáo tài liệu", new GUI.ReportDocument());
+            }
+        }
+
+        private void btnReportTest_Exercise_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in tcView.TabPages)
+            {
+                if (tab.Text == "Báo cáo bài thi")
+                {
+                    tcView.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.AddTab(tcView, "Báo cáo bài thi", new GUI.ReportTest());
+            }
         }
     }
 }
