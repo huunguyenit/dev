@@ -19,7 +19,30 @@ namespace frmManage.BLL
             string sql = "select MaBT_KT,TenBT_KT,MaChuong_BK,DiemBT_KT,MaMH_BK,MaHS_BK,MaNhom_BK, (CASE BaiTap WHEN 'true' THEN N'Bài tập' ELSE N'Bài kiểm tra' END) AS BaiTap, (CASE BaiNhom WHEN 'true' THEN N'Nhóm' ELSE N'Cá nhân' END) AS BaiNhom from BaiTap_KiemTra";
             return connData.GetData(sql);
         }
+        //Thong ke
+        //Bai tap, bai kiem tra
+        public string CountTest()
+        {
+            string sql = "select count(*) from BaiTap_KiemTra bk where bk.BaiTap=0";
+            return connData.CountData(sql);
+        }
 
+        public string CountExercise()
+        {
+            string sql = "select count(*) from BaiTap_KiemTra bk where bk.BaiTap=1";
+            return connData.CountData(sql);
+        }
+        //Nhom, ca nhan
+        public string CountGroup()
+        {
+            string sql = "select count(*) from BaiTap_KiemTra bk where bk.BaiNhom=1";
+            return connData.CountData(sql);
+        }
+        public string CountStudent()
+        {
+            string sql = "select count(*) from BaiTap_KiemTra bk where bk.BaiNhom=0";
+            return connData.CountData(sql);
+        }
         public bool CheckBeforeSave(BaiTap_KiemTra_DTO baiTap_KiemTra)
         {
             if (baiTap_KiemTra.TenBT_KT.Equals(""))

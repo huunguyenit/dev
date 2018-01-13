@@ -267,6 +267,9 @@
     <EmbeddedResource Include="GUI\ReportSubject.resx">
       <DependentUpon>ReportSubject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReportTest.resx">
+      <DependentUpon>ReportTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\SearchDocument.resx">
       <DependentUpon>SearchDocument.cs</DependentUpon>
     </EmbeddedResource>

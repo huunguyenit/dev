@@ -95,6 +95,14 @@ namespace frmManage.GUI
             InfoTestSubject_Load(sender, e);
         }
 
+        private void tbxScore_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void InfoTestSubject_Load(object sender, EventArgs e)
         {
             cbxSubject.Properties.DataSource = monHocBUS.GetSubjectLoad();

@@ -36,7 +36,23 @@ namespace frmManage.DAL
                 MessageBox.Show("Không thể kết nối tới Cơ Sở Dữ Liệu !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        //Hàm đếm giá trị từ Database theo câu lệnh sql truyền vao
+        public string CountData(string sql)
+        {
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            string kq = null;
+            try
+            {
+                kq = cmd.ExecuteScalar().ToString();
+            }
+            catch
+            {
+                kq = null;
+            }
+            cmd.Dispose();
 
+            return kq;
+        }
         //Hàm lấy dữ liệu từ Database theo câu lệnh sql truyền vào
         public DataTable GetData(string sql)
         {

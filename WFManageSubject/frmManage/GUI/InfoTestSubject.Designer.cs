@@ -124,6 +124,7 @@
             this.tbxScore.Name = "tbxScore";
             this.tbxScore.Size = new System.Drawing.Size(221, 20);
             this.tbxScore.TabIndex = 8;
+            this.tbxScore.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxScore_KeyPress);
             // 
             // cbxSubject
             // 

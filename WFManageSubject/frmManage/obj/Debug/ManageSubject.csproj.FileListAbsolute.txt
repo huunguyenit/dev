@@ -263,3 +263,4 @@ D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\ManageSubject.csproj.
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.exe
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.pdb
 D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.ReportDocument.resources
+D:\WpManageSubject\dev\WFManageSubject\frmManage\obj\Debug\frmManage.GUI.ReportTest.resources
